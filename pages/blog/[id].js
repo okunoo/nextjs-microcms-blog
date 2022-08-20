@@ -24,12 +24,12 @@ export const getStaticPaths = async () => {
 };
 
 export default function BlogId({ blog }) {
-    return <main className = {styles.main}>
+    return <main className={styles.main}>
+        <h1>私のブログです</h1>
         <h1 className = {styles.title}>{blog.title}</h1>
         <p className = {styles.publishedAt}>{blog.publishedAt}</p>
         <div dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
         className = {styles.post}>
-
         </div>
     </main>
 }
