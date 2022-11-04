@@ -15,7 +15,6 @@ export default function Home({ blog }) {
   return (
     <div className={styles.container}>
       <h1>凡庸すぎる日常ブログ</h1>
-      <img src="images/rani.png"></img>
       <h2>これといって何の面白みもない私の日常を綴ったブログサイト</h2>
       <h3>↓以下のテキストをクリックするとブログを見ることができます。↓</h3>
     {blog.map((blog) => (
