@@ -14,7 +14,8 @@ export const getStaticProps = async () => {
 export default function Home({ blog }) {
   return (
     <div className={styles.container}>
-    <h1>私のブログです</h1>
+      <h1>凡庸すぎる日常ブログ</h1>
+      <h2>これといって何の面白みもない私の日常を綴ったブログサイト</h2>
     {blog.map((blog) => (
       <li key={blog.id}>
         <Link href={`blog/${blog.id}`}>
